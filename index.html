@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <title>Time tracking dashboard</title>
+
+    
+  </head>
+  <body>
+
+    <div id="wrapper">
+      <header>
+        <div id="header-title">
+          <img src="./images/image-jeremy.png" alt="profile picture" id="profile-picture">
+          <div id="header-title-text">
+            <h4>Report for</h4>
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+        <nav>
+          <button id="daily-button" class="timeframe-button"><p>Daily</p></button>
+          <button id="weekly-button" class="timeframe-button"><p>Weekly</p></button>
+          <button id="monthly-button" class="timeframe-button"><p>Monthly</p></button>
+        </nav>
+      </header>
+  
+      <main>
+        <div id="work-card" class="card">
+          <img src="./images/icon-work.svg" alt="work icon" class="card-image">
+          <div id="work-card-main" class="card-main">
+            <div class="card-header flex-row-between">
+              <p class="card-title">Work</p>
+              <button class="card-options-button">
+                <img src="./images/icon-ellipsis.svg" alt="options" class="card-options-button">
+              </button>
+            </div>
+            <div class="card-main-info flex-row-between">
+              <h2 class="time-text">Loading...</h2>
+              <p class="last-timeframe-text" id="work-last-timeframe-text"> - Loading...</p>
+            </div>
+          </div>
+        </div>
+  
+        <div id="play-card" class="card">
+          <img src="./images/icon-play.svg" alt="play icon" class="card-image">
+          <div id="play-card-main" class="card-main">
+            <div class="card-header flex-row-between">
+              <p class="card-title">Play</p>
+              <button class="card-options-button">
+                <img src="./images/icon-ellipsis.svg" alt="options" class="card-options-button">
+              </button>
+            </div>
+            <div class="card-main-info flex-row-between">
+              <h2 class="time-text">Loading...</h2>
+              <p class="last-timeframe-text" id="play-last-timeframe-text"> - Loading...</p>
+            </div>
+          </div>
+        </div>
+  
+        <div id="study-card" class="card">
+          <img src="./images/icon-study.svg" alt="study icon" class="card-image">
+          <div id="study-card-main" class="card-main">
+            <div class="card-header flex-row-between">
+              <p class="card-title">Study</p>
+              <button class="card-options-button">
+                <img src="./images/icon-ellipsis.svg" alt="options" class="card-options-button">
+              </button>
+            </div>
+            <div class="card-main-info flex-row-between">
+              <h2 class="time-text">Loading...</h2>
+              <p class="last-timeframe-text" id="study-last-timeframe-text"> - Loading...</p>
+            </div>
+          </div>
+        </div>
+  
+        <div id="exercise-card" class="card">
+          <img src="./images/icon-exercise.svg" alt="exercise icon" class="card-image">
+          <div id="exercise-card-main" class="card-main">
+            <div class="card-header flex-row-between">
+              <p class="card-title">Exercise</p>
+              <button class="card-options-button">
+                <img src="./images/icon-ellipsis.svg" alt="options" class="card-options-button">
+              </button>
+            </div>
+            <div class="card-main-info flex-row-between">
+              <h2 class="time-text">Loading...</h2>
+              <p class="last-timeframe-text" id="exercise-last-timeframe-text"> - Loading...</p>
+            </div>
+          </div>
+        </div>
+  
+        <div id="social-card" class="card">
+          <img src="./images/icon-social.svg" alt="social icon" class="card-image">
+          <div id="social-card-main" class="card-main">
+            <div class="card-header flex-row-between">
+              <p class="card-title">Social</p>
+              <button class="card-options-button">
+                <img src="./images/icon-ellipsis.svg" alt="options" class="card-options-button">
+              </button>
+            </div>
+            <div class="card-main-info flex-row-between">
+              <h2 class="time-text">Loading...</h2>
+              <p class="last-timeframe-text" id="social-last-timeframe-text"> - Loading...</p>
+            </div>
+          </div>
+        </div>
+  
+        <div id="selfcare-card" class="card">
+          <img src="./images/icon-self-care.svg" alt="selfcare icon" class="card-image">
+          <div id="selfcare-card-main" class="card-main">
+            <div class="card-header flex-row-between">
+              <p class="card-title">Self Care</p>
+              <button class="card-options-button">
+                <img src="./images/icon-ellipsis.svg" alt="options" class="card-options-button">
+              </button>
+            </div>
+            <div class="card-main-info flex-row-between">
+              <h2 class="time-text">Loading...</h2>
+              <p class="last-timeframe-text" id="selfcare-last-timeframe-text"> - Loading...</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    <script type="module" src="main_script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 50px 15px 50px 15px;
+    margin: 0;
+    background-color: #0f1424;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(7, fit-content);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1f4a;
+    border-radius: 12px;
+}
+
+#header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5847eb;
+    padding: 25px 15px 25px 15px;
+    border-radius: 12px;
+}
+
+#header-title-text h2, h4 {
+    color: #bdc1ff;
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+
+#profile-picture {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    border-radius: 500px;
+    border: 2px solid white;
+}
+
+nav {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    color: #6f76c8;
+    font-size: 1em;
+    transition: all 150ms linear;
+}
+
+nav button:first-of-type {
+    margin-left: 10px;
+}
+
+nav button:last-of-type {
+    margin-left: 5px;
+}
+
+nav button:hover {
+    color: #bdc1ff;
+}
+
+.card-options-button:hover {
+    filter: brightness(125%)
+}
+
+.card-options-button {
+    transition: all 250ms linear;
+}
+
+.card {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    height: max-content;
+    padding-top: 35px;
+}
+
+main .card:hover .card-main {
+    cursor: pointer;
+    background-color: #2a2d57;
+}
+
+#work-card {
+    background-color: #ff8c66;
+}
+#play-card {
+    background-color: #56c2e6;
+}
+#study-card {
+    background-color: #ff5c7c;
+}
+#exercise-card {
+    background-color: #4acf81;
+}
+#social-card {
+    background-color: #7536d3;
+}
+#selfcare-card {
+    background-color: #f1c65b;
+}
+
+.card-image {
+    z-index: 0;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+}
+
+.card-main {
+    position: relative;
+    z-index: 1;
+    height: 80%;
+    background-color: #1c1f4a;
+    border-radius: 12px;
+    padding: 22px 15px 25px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: all 200ms ease-in-out;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.card-main-info {
+    margin-top: 5px;
+}
+
+.time-text {
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.flex-row-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.last-timeframe-text {
+    color: #bdc1ff;
+    font-weight: 300;
+}
+
+.card-options-button {
+    background-color: transparent;
+    border: none;
+}
+
+
+button:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 883px) {
+    body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    main {
+        grid-template-rows: repeat(2, 171px);
+        grid-template-columns: repeat(3, 200px);
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .card-main {
+        top: 5px;
+    }
+
+    .card-main-info {
+        margin-top: 13px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .time-text {
+        font-size: xx-large;
+    }
+
+    header {
+        margin-right: 20px;
+        width: 200px;
+    }
+
+    #header-title {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 70%;
+        padding: 20px;
+    }
+
+    #profile-picture {
+        margin-bottom: 30px;
+    }
+
+    #header-title-text h2 {
+        color: white;
+        font-size: 1.7rem;
+    }
+
+    nav {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav button:first-of-type {
+        margin: 0;
+    }
+    nav button:last-of-type {
+        margin: 0;
+    }
+    nav button {
+        margin-bottom: 12px;
+        margin-top: 12px;
+    }
+}
