@@ -1,10 +1,6 @@
 let data = null;
 
-const dataPromise = fetch("https://api.jsonbin.io/v3/b/640b943debd26539d08c8b93", {
-    headers: {
-        'X-Access-Key': '$2b$10$zhWSvLbzpZTEwGuPWitsSeDVu4gDJ2EeRIbmmA1H9fn9o5RFpsWzO',
-    }
-}).then((res) => {return res.json()}).then(function(data) {return data.record});
+const dataPromise = fetch("./data.json").then((res) => {return res.json()}).then(function(data) {return data.record});
 const dataPromise3 = dataPromise.then((value) => {
     data = value;
 })
